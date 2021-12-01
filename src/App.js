@@ -4,6 +4,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import HomePage from './pages/HomePage';
+import ScenicSpotPage from "./pages/ScenicSpotPage";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
           <Switch>
             <Route path='/' exact>
               <HomePage />
+            </Route>
+            <Route path='/scenicSpot'>
+              <ScenicSpotPage />
             </Route>
           </Switch>
           <Footer />
